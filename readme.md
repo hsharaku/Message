@@ -18,4 +18,4 @@
 > MessageForm.exe テスト これはテストです\r\n２行目の表示もでき ます /fs 20 /fc White /bc Red
 
 とすると、下記のようなウィンドウが表示される。
-![](image\capture.JPG)
+![sample](image\capture.JPG)
