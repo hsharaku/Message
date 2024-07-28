@@ -46,12 +46,12 @@ namespace Message
             // b_ok
             // 
             this.b_ok.Font = new System.Drawing.Font("MS UI Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.b_ok.Location = new System.Drawing.Point(327, 159);
+            this.b_ok.Location = new System.Drawing.Point(328, 154);
             this.b_ok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.b_ok.Name = "b_ok";
             this.b_ok.Size = new System.Drawing.Size(95, 46);
             this.b_ok.TabIndex = 1;
-            this.b_ok.Text = "OK";
+            this.b_ok.Text = "閉じる";
             this.b_ok.UseVisualStyleBackColor = true;
             this.b_ok.Click += new System.EventHandler(this.b_ok_Click);
             // 
@@ -59,7 +59,7 @@ namespace Message
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 215);
+            this.ClientSize = new System.Drawing.Size(434, 211);
             this.ControlBox = false;
             this.Controls.Add(this.b_ok);
             this.Controls.Add(this.lb_message);
