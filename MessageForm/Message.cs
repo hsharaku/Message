@@ -64,14 +64,14 @@ namespace Message
             _idx = findOption(args, "/fw");
             if (_idx != -1)
             {
-                this.Width = int.Parse(args[_idx + 1]);
-                b_ok.Location = new Point(this.Width - 122, b_ok.Location.Y);
+                this.Size = new Size(int.Parse(args[_idx + 1]), this.Size.Height);
+                b_ok.Location = new Point(this.Size.Width - 113, b_ok.Location.Y);
             }
             _idx = findOption(args, "/fh");
             if (_idx != -1)
             {
-                this.Height = int.Parse(args[_idx + 1]);
-                b_ok.Location = new Point(b_ok.Location.Y, this.Width - 122);
+                this.Size = new Size(this.Size.Width, int.Parse(args[_idx + 1]));
+                b_ok.Location = new Point(b_ok.Location.X, this.Size.Height - 80);
             }
         }
 
