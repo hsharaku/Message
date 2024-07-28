@@ -14,8 +14,6 @@ namespace Message
         [STAThread]
         static void Main(string[] args)
         {
-            Console.WriteLine(args[0]);
-
             if (args.Length >= 2)
             {
                 Application.EnableVisualStyles();
