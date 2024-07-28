@@ -59,6 +59,20 @@ namespace Message
             {
                 this.BackColor = Color.FromName(args[_idx + 1]);
             }
+
+            // Formのサイズ変更
+            _idx = findOption(args, "/fw");
+            if (_idx != -1)
+            {
+                this.Width = int.Parse(args[_idx + 1]);
+                b_ok.Location = new Point(this.Width - 122, b_ok.Location.Y);
+            }
+            _idx = findOption(args, "/fh");
+            if (_idx != -1)
+            {
+                this.Height = int.Parse(args[_idx + 1]);
+                b_ok.Location = new Point(b_ok.Location.Y, this.Width - 122);
+            }
         }
 
         private void b_ok_Click(object sender, EventArgs e)
